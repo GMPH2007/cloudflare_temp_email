@@ -1,0 +1,10 @@
+{
+  "name": "cloudflare-temp-email",
+  "version": "1.14.0",
+  "private": true,
+  "description": "Cloudflare Temp Email Root",
+  "scripts": {
+    "build": "cd worker && npm install",
+    "deploy": "npx wrangler deploy"
+  }
+}
