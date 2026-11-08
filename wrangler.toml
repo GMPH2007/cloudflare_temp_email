@@ -1,0 +1,38 @@
+name = "cloudflare_temp_email"
+main = "worker/src/worker.ts"
+compatibility_date = "2025-04-01"
+compatibility_flags = [ "nodejs_compat" ]
+keep_vars = true
+
+[vars]
+TITLE = "Misael Mail Temporal - Modo Educador"
+PREFIX = ""
+DEFAULT_DOMAINS = ["bjedu.tech", "hxedu.tech", "erzi.me", "36d.de5.net", "tgnb.tech"]
+DOMAINS = ["bjedu.tech", "hxedu.tech", "erzi.me", "36d.de5.net", "tgnb.tech"]
+ENABLE_CREATE_ADDRESS_SUBDOMAIN_MATCH = true
+USER_DEFAULT_ROLE = "vip"
+ADMIN_USER_ROLE = "admin"
+USER_ROLES = [
+    { domains = ["bjedu.tech", "hxedu.tech", "erzi.me", "36d.de5.net", "tgnb.tech"], role = "vip", prefix = "" },
+    { domains = ["bjedu.tech", "hxedu.tech", "erzi.me", "36d.de5.net", "tgnb.tech"], role = "admin", prefix = "" }
+]
+JWT_SECRET = "misael_super_secret_jwt_key_2026"
+BLACK_LIST = ""
+ENABLE_USER_CREATE_EMAIL = true
+ENABLE_USER_DELETE_EMAIL = true
+ENABLE_AUTO_REPLY = true
+ENABLE_WEBHOOK = true
+ENABLE_ADDRESS_PASSWORD = true
+DEFAULT_SEND_BALANCE = 999999
+NO_LIMIT_SEND_ROLE = "vip"
+ADMIN_PASSWORDS = ["misael2026"]
+DISABLE_ADMIN_PASSWORD_CHECK = false
+ENABLE_AI_EMAIL_EXTRACT = true
+AI_EXTRACT_MODE = "local"
+REMOVE_EXCEED_SIZE_ATTACHMENT = false
+REMOVE_ALL_ATTACHMENT = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "temp-email-db"
+database_id = "PENDIENTE_DE_CREAR"
